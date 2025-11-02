@@ -1,4 +1,4 @@
-# ImageSearch Pro 🔍
+# MyImage 🔍
 
 A professional full-stack image search application built with modern web technologies, featuring OAuth authentication and real-time search capabilities. This project demonstrates comprehensive full-stack development skills with a focus on user experience and performance.
 
