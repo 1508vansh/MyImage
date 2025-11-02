@@ -98,13 +98,13 @@ MyImage/
 
 ### Authentication Endpoints
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| `GET` | `/api/auth/google` | Initiate Google OAuth login | No |
-| `GET` | `/api/auth/facebook` | Initiate Facebook OAuth login | No |
-| `GET` | `/api/auth/github` | Initiate GitHub OAuth login | No |
-| `GET` | `/api/auth/user` | Get current user session | Session |
-| `POST` | `/api/auth/logout` | Logout user and clear session | Session |
+| Method | Endpoint | Description | 
+|--------|----------|-------------|
+| `GET` | `/api/auth/google` | Initiate Google OAuth login |
+| `GET` | `/api/auth/facebook` | Initiate Facebook OAuth login |
+| `GET` | `/api/auth/github` | Initiate GitHub OAuth login | 
+| `GET` | `/api/auth/user` | Get current user session | 
+| `POST` | `/api/auth/logout` | Logout user and clear session |
 
 ### Search & Data Endpoints
 
