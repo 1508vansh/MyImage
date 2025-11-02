@@ -24,7 +24,7 @@ A professional full-stack image search application built with modern web technol
 - **Smooth Animations** - CSS transitions and hover effects for better interaction
 - **Loading States** - Elegant loading indicators and skeleton screens
 
-## 🛠 Technology Stack
+## Technology Stack
 
 ### Frontend Architecture
 - **React** - Latest React with hooks and functional components
