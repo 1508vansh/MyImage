@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = (provider) => {
     // Redirect to OAuth provider
-    window.location.href = `http://localhost:5000/api/auth/${provider}`;
+    window.location.href = `https://myimage-production-b39f.up.railway.app/api/auth/${provider}`;
   };
 
   const logout = async () => {

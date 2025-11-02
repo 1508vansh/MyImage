@@ -23,7 +23,7 @@ passport.deserializeUser(async (id, done) => {
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID || 'dummy-google-client-id',
   clientSecret: process.env.GOOGLE_CLIENT_SECRET || 'dummy-google-client-secret',
-  callbackURL: "http://localhost:5000/api/auth/google/callback"
+  callbackURL: "https://myimage-production-b39f.up.railway.app/api/auth/google/callback"
 }, async (accessToken, refreshToken, profile, done) => {
   try {
     let user = await User.findOne({ googleId: profile.id });
@@ -48,7 +48,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
   clientID: process.env.FACEBOOK_APP_ID || 'dummy-facebook-app-id',
   clientSecret: process.env.FACEBOOK_APP_SECRET || 'dummy-facebook-app-secret',
-  callbackURL: "http://localhost:5000/api/auth/facebook/callback",
+  callbackURL: "https://myimage-production-b39f.up.railway.app/api/auth/facebook/callback",
   profileFields: ['id', 'displayName', 'email', 'photos']
 }, async (accessToken, refreshToken, profile, done) => {
   try {
@@ -74,7 +74,7 @@ passport.use(new FacebookStrategy({
 passport.use(new GitHubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID || 'dummy-github-client-id',
   clientSecret: process.env.GITHUB_CLIENT_SECRET || 'dummy-github-client-secret',
-  callbackURL: "http://localhost:5000/api/auth/github/callback",
+  callbackURL: "https://myimage-production-b39f.up.railway.app/api/auth/github/callback",
   scope: ['user:email']
 }, async (accessToken, refreshToken, profile, done) => {
   try {
