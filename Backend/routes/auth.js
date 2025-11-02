@@ -42,7 +42,9 @@ router.get('/github/callback',
 
 // Get current user
 router.get('/user', (req, res) => {
+  console.log("reached user backend");
   if (req.isAuthenticated()) {
+    console.log(req.user);
     res.json({ user: req.user });
   } else {
     res.status(401).json({ user: null });

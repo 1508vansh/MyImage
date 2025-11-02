@@ -26,7 +26,6 @@ export const AuthProvider = ({ children }) => {
       setLoading(true)
       const response = await axiosClient.get('/api/auth/user');
       setUser(response?.data?.user);
-      setLoading(false);
     } catch (error) {
       // User is not authenticated, which is fine
       console.log('User not authenticated');
@@ -37,7 +36,9 @@ export const AuthProvider = ({ children }) => {
 
   const login = (provider) => {
     // Redirect to OAuth provider
+    console.log("redirecting to the provider");
     window.location.href = `https://myimage-production-b39f.up.railway.app/api/auth/${provider}`;
+    console.log("done");
   };
 
   const logout = async () => {

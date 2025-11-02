@@ -18,12 +18,14 @@ import passport from 'passport';
 })();
 
 const app = express();
+app.set('trust proxy', 1);
 
 console.log('PORT:', process.env.PORT);
 
+
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://myimage0.netlify.app',
+  origin: process.env.CLIENT_URL,
   credentials: true
 }));
 
@@ -33,7 +35,7 @@ app.use(session({
   secret: process.env.SESSION_SECRET|| 'dummy-session-secret',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false, maxAge: 24 * 60 * 60 * 1000 } // 24 hours
+  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000 } // 24 hours
 }));
 app.use(passport.initialize());
 app.use(passport.session());
