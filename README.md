@@ -27,7 +27,7 @@ A professional full-stack image search application built with modern web technol
 ## 🛠 Technology Stack
 
 ### Frontend Architecture
-- **React 18** - Latest React with hooks and functional components
+- **React** - Latest React with hooks and functional components
 - **Tailwind CSS** - Utility-first CSS framework for rapid UI development
 - **Daisy UI** - Component library for beautiful, accessible designs
 - **Parcel** - Zero-configuration build tool for fast development
@@ -43,7 +43,7 @@ A professional full-stack image search application built with modern web technol
 
 ### Authentication & Security
 - **Passport.js** - Simple, unobtrusive authentication for Node.js
-- **OAuth 2.0** - Industry-standard authentication protocol
+- **OAuth** - Industry-standard authentication protocol
 - **Express Session** - Simple session middleware for Express
 - **Environment Variables** - Secure configuration management
 
@@ -162,23 +162,7 @@ npm run dev    # Start development server with nodemon
 ```
 ## 📸 Visual Proof
 
-### Front Page (Without Login)
-![OAuth Login](Frontend/src/assets/screenshots/first.png)
-*Dashboard part without login*
-
-### OAuth Login
-![OAuth Login](Frontend/src/assets/screenshots/second.png)
-![OAuth Login Through Google](Frontend/src/assets/screenshots/third.png)
-*Multi-provider authentication with Google, Facebook, and GitHub options*
-
-### Search History Section
-![Top Searches Banner](Frontend/src/assets/screenshots/fourth.png)
-*Personalized search history with timestamps and quick access*
-
-### Search Results + Multi-Select
-![Search Results](Frontend/src/assets/screenshots/fifth.png)
-![Multi-Select](Frontend/src/assets/screenshots/sixed.png)
-*Image grid with multi-select checkboxes and selection counter*
+### Check the "/assets" folder in frontend
 
 ## 📞 Contact
 
