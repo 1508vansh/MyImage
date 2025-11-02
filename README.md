@@ -59,7 +59,7 @@ A professional full-stack image search application built with modern web technol
 - **HTTP Client** - Efficient server-client communication
 
 ## 📁 Project Structure
-
+```
 MyImage/
 ├── Frontend/
 │   ├── public/
@@ -99,7 +99,7 @@ MyImage/
 │   ├── package.json
 │   └── .env
 └── README.md
-
+```
 ## API Endpoints
 
 ### Authentication Endpoints
@@ -192,7 +192,7 @@ npm run dev    # Start development server with nodemon
 *Full Stack Developer*
 
 - **GitHub**: [@1508vansh](https://github.com/1508vansh)
-- **LinkedIn**: [Vansh Sharma](https://www.linkedin.com/in/vansh-soni-619736286)
+- **LinkedIn**: [Vansh Soni](https://www.linkedin.com/in/vansh-soni-619736286)
 - **Email**: vanshsoni13062005@gmail.com
 
 
