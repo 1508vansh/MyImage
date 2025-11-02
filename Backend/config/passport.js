@@ -4,6 +4,8 @@ import { Strategy as FacebookStrategy } from 'passport-facebook';
 import { Strategy as GitHubStrategy } from 'passport-github2';
 import User from '../models/User.js';
 
+console.log('✅ Passport strategies loaded');
+
 // Serialize user for session
 passport.serializeUser((user, done) => {
   done(null, user.id);

@@ -12,10 +12,12 @@ import searchRoutes from './routes/search.js';
 import historyRoutes from './routes/history.js';
 import cookieParser from 'cookie-parser';
 import passport from 'passport';
+import './config/passport.js';
 
-(async () => {
-  await import('./config/passport.js');
-})();
+
+// (async () => {
+//   await import('./config/passport.js');
+// })();
 
 const app = express();
 app.set('trust proxy', 1);
@@ -25,7 +27,7 @@ console.log('PORT:', process.env.PORT);
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL,
+  origin: [process.env.CLIENT_URL, 'http://localhost:1234'],
   credentials: true
 }));
 
@@ -35,7 +37,7 @@ app.use(session({
   secret: process.env.SESSION_SECRET|| 'dummy-session-secret',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000 } // 24 hours
+  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000,sameSite:'none' } // 24 hours
 }));
 app.use(passport.initialize());
 app.use(passport.session());
