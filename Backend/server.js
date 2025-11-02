@@ -14,7 +14,10 @@ import cookieParser from 'cookie-parser';
 import passport from 'passport';
 import './config/passport.js';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dfb9da87f061f3239f063f5310859d2774020560
 // (async () => {
 //   await import('./config/passport.js');
 // })();
@@ -37,7 +40,11 @@ app.use(session({
   secret: process.env.SESSION_SECRET|| 'dummy-session-secret',
   resave: false,
   saveUninitialized: false,
+<<<<<<< HEAD
   cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000,sameSite:'none' } // 24 hours
+=======
+  cookie: { secure: true, maxAge: 24 * 60 * 60 * 1000, sameSite:'none'} // 24 hours
+>>>>>>> dfb9da87f061f3239f063f5310859d2774020560
 }));
 app.use(passport.initialize());
 app.use(passport.session());
