@@ -12,7 +12,7 @@ router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/login' }),
   (req, res) => {
     // Successful authentication, redirect to client
-    res.redirect(process.env.CLIENT_URL || 'http://localhost:1234');
+    res.redirect(process.env.CLIENT_URL || 'https://myimage0.netlify.app');
   }
 );
 
@@ -24,7 +24,7 @@ router.get('/facebook',
 router.get('/facebook/callback',
   passport.authenticate('facebook', { failureRedirect: '/login' }),
   (req, res) => {
-    res.redirect(process.env.CLIENT_URL || 'http://localhost:1234');
+    res.redirect(process.env.CLIENT_URL || 'https://myimage0.netlify.app');
   }
 );
 
@@ -36,7 +36,7 @@ router.get('/github',
 router.get('/github/callback',
   passport.authenticate('github', { failureRedirect: '/login' }),
   (req, res) => {
-    res.redirect(process.env.CLIENT_URL || 'http://localhost:1234');
+    res.redirect(process.env.CLIENT_URL || 'https://myimage0.netlify.app');
   }
 );
 

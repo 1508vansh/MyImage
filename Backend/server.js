@@ -23,7 +23,7 @@ console.log('PORT:', process.env.PORT);
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:1234',
+  origin: process.env.CLIENT_URL || 'https://myimage0.netlify.app',
   credentials: true
 }));
 
