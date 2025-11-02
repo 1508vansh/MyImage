@@ -35,7 +35,7 @@ const ImageGrid = ({ images, searchTerm, totalResults }) => {
         </div>
         
         {selectedImages.size > 0 && (
-          <div className="bg-primary-100 text-primary-700 px-4 py-2 rounded-lg font-medium">
+          <div className="bg-primary-100 text-primary px-4 py-2 rounded-lg font-medium">
             Selected: {selectedImages.size} image{selectedImages.size !== 1 ? 's' : ''}
           </div>
         )}
