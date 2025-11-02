@@ -12,9 +12,9 @@ import Footer from './components/layout/Footer';
 function App() {
   const {user,checkAuthStatus} = useAuth();
 
-  useEffect(() => {
-    checkAuthStatus();
-  }, []);
+  // useEffect(() => {
+  //   checkAuthStatus();
+  // }, []);
   return (
       <Router>
         <div className="min-h-screen bg-gray-50">
