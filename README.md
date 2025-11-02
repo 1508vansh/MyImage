@@ -2,8 +2,8 @@
 
 A professional full-stack image search application built with modern web technologies, featuring OAuth authentication and real-time search capabilities. This project demonstrates comprehensive full-stack development skills with a focus on user experience and performance.
 
-![Tech Stack](https://img.shields.io/badge/React-18.2.0-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3.6-38B2AC)
+![Tech Stack](https://img.shields.io/badge/React-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
 ![Parcel](https://img.shields.io/badge/Parcel-Bundler-lightgrey)
