@@ -18,6 +18,7 @@ import passport from 'passport';
 })();
 
 const app = express();
+app.set('trust proxy', 1);
 
 console.log('PORT:', process.env.PORT);
 
